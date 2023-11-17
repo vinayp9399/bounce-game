@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Bouncing Ball</title>
+</head>
+
+<body>
+  <div class="banner" id="banner">
+    <div class="card">
+     <img class="card-img-top image1" src="https://i.ytimg.com/vi/tikTD-hfhlA/maxresdefault.jpg" alt="Card image cap">
+     <div class="card-body" style="text-align: center;">
+      <img src="https://meetbounce.com/images/bounce_logo_png.png" class="image2" alt="">
+      <br>
+      <br>
+      <button class="btn btn-primary" onClick="start()">Start Game</button> 
+     </div>
+    </div>
+  </div>  
+    <div class="banner1" id="banner1">
+     <div class="card">
+      <img class="card-img-top image1" src="https://i.ytimg.com/vi/tikTD-hfhlA/maxresdefault.jpg" alt="Card image cap">
+      <div class="card-body" style="text-align: center;">
+        <img src="https://meetbounce.com/images/bounce_logo_png.png" class="image2" alt="">
+        <div style="display: flex;"> 
+          <p style="padding-left: 50px; padding-right: 20px;">Collision Count :</p>
+          <p id="count" style="font-weight: bold;"></p>
+        </div>
+        <button class="btn btn-primary" onClick="resetCount()">Reset</button>
+      </div>
+     </div>
+    </div>
+    <canvas onClick="clickOnCanvas()" id="demo" width="800" height="500" style="background-color: black;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
